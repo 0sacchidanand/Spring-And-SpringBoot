@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="s1" class="com.model.Student" autowire="byType">
+		<property name="sid" value="100"></property>
+		<property name="sname" value="Sachin"></property>
+		<property name="scity" value="Pune"></property>
+		<property name="spercentage" value="71.60"></property>
+		
+		<property name="hobbies"
+			value="cricket,reading,writing,cooking"></property>
+		<property name="details">
+			<map>
+				<entry key="c" value="cricket"></entry>
+				<entry key="a" value="apple"></entry>
+				<entry key="b" value="ball"></entry>
+				<entry key="f" value="fox"></entry>
+				<entry key="m" value="man"></entry>
+
+			</map>
+		</property>
+	</bean>
+	<bean id="s2" class="com.model.Address">
+		<property name="line1" value="ABC Chouk"></property>
+		<property name="line2" value="Gandhi nagar"></property>
+		<property name="city" value="Pune"></property>
+		<property name="state" value="MH"></property>
+	</bean>
+
+
+</beans>
